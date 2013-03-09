@@ -132,7 +132,7 @@ Backbone.couch_connector = con =
       delete _opts.keys
     
     if _list 
-      @helpers.make_db().list "#{_ddoc}/#{_list}", "#{_view}", _opts   
+      @helpers.make_db().list "#{_ddoc}/#{_list}", "#{_view}", _opts , _opts   
     else
       @helpers.make_db().view "#{_ddoc}/#{_view}", _opts    
 
